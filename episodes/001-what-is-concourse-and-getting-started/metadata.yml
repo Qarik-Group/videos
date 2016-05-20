@@ -1,5 +1,6 @@
 ---
 id: 1
+slug: 001-what-is-concourse-and-getting-started/
 title: What is Concourse CI? How to get started?
 description: Learn a little about Concourse CI and get your own Concourse CI running on your laptop with Vagrant.
 original_vimeo_url: https://vimeo.com/167371982
