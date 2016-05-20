@@ -1,11 +1,9 @@
 Learn a little about [Concourse CI](https://concourse.ci/) and get your own Concourse CI running on your laptop with Vagrant.
 
-This episode is the pre-cursor to a series of episodes for learning to use Concourse via Stark & Wayne's [Concourse Tutorial](https://github.com/starkandwayne/concourse-tutorial). The repository includes a `Vagrantfile` to get started and dozens of tutorials. These tutorials will be the basis for future videos as well.
+<iframe src="https://player.vimeo.com/video/167371982? quality=720p" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ```
-git clone https://github.com/starkandwayne/concourse-tutorial.git
-cd concourse-tutorial
-vagrant box add concourse/lite --box-version $(cat VERSION)
+vagrant init concourse/lite
 vagrant up
 ```
 
@@ -18,19 +16,18 @@ For OS X and Linux you need to make it executable:
 ```
 mv ~/Downloads/fly ~/bin/fly
 chmod +x ~/bin/fly
-```
-
-Test that the `fly` CLI is working and target your local Concourse CI:
-
-```
 fly -v
-fly -t tutorial login -c http://192.168.100.4:8080/
-fly -t tutorial pipelines
 ```
 
-Deploy the sample pipeline from http://concourse.ci/
+Alias your local Concourse CI with the name `tutorial`:
 
-Create `tmp/hello.yml`:
+```
+fly -t tutorial login -c http://192.168.100.4:8080/
+```
+
+There is a "Hello, world" pipeline example at the bottom of http://concourse.ci/.
+
+Create `hello.yml`:
 
 ```yaml
 jobs:
@@ -47,14 +44,17 @@ jobs:
         args: ["Hello, world!"]
 ```
 
-To register the new pipeline:
+And register the new pipeline:
 
 ```
 fly -t tutorial set-pipeline -p hello-world -c hello.yml
-fly -t tutorial pipelines
 ```
 
 View the pipeline and run the job via http://192.168.100.4:8080/pipelines/hello-world
+
+Click the "hello-world" job to view it, and click its Plus (+) button on the top right to manually trigger the job to start. In future tutorials we will learn about triggering jobs when external resources change.
+
+When the job is completed it changes to green. Click the home icon to return to the pipeline dashboard and see that the job appears green too.
 
 To tear down your Concourse CI:
 
