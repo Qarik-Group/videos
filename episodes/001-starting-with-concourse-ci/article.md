@@ -1,4 +1,4 @@
-Get your own Concourse CI running on your laptop with Vagrant.
+Learn a little about [Concourse CI](https://concourse.ci/) and get your own Concourse CI running on your laptop with Vagrant.
 
 This episode is the pre-cursor to a series of episodes for learning to use Concourse via Stark & Wayne's [Concourse Tutorial](https://github.com/starkandwayne/concourse-tutorial). The repository includes a `Vagrantfile` to get started and dozens of tutorials. These tutorials will be the basis for future videos as well.
 
