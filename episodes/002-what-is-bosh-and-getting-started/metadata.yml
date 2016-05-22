@@ -2,9 +2,9 @@
 id: 1
 slug: 002-what-is-bosh-how-to-get-started
 title: What is BOSH? How to get started?
-description:
+description: In this tutorial we get started with a local version of BOSH called bosh-lite and start to introduce some of the concepts, terminology and commands.
 original_vimeo_url: https://vimeo.com/167593972
 custom_vimeo_url: https://vimeo.com/starkandwayne/002-what-is-bosh-and-getting-started
-blog_article_id:
+blog_article_id: 2
 blog_episode_url: https://www.starkandwayne.com/videos/002-what-is-bosh-and-getting-started/
 raw_episode_dropbox_url: https://www.dropbox.com/s/kg7p1pswl5wfxrh/002%20-%20What%20is%20BOSH%20and%20Getting%20Started.mp4?dl=0
