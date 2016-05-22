@@ -40,3 +40,36 @@ There are three main components to a BOSH deployment:
 * BOSH stemcell - used when creating server VMs/containers
 * BOSH releases - bespoke software and dependencies
 * BOSH manifest - how to combine the above to provision and configure running servers
+
+## Commands to deploy
+
+To create a development release (rather than a final release, which will be introduced in future episodes):
+
+```
+bosh create release
+```
+
+To upload the most recently created release to our BOSH:
+
+```
+bosh upload release
+```
+
+To get the UUID of our BOSH's director:
+
+```
+bosh status --uuid
+```
+
+To target the deployment manifest and start the deployment:
+
+```
+bosh deployment manifest.yml
+bosh deploy
+```
+
+To view the VMs in a deployment and their IP addresses:
+
+```
+bosh vms
+```
