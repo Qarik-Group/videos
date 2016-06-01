@@ -59,7 +59,7 @@ To continuously reuse the same 1280x720 region of your screen, perhaps use [LICE
 
 Then position the windows being used into that space - iTerm, Chrome, etc. This will ensure that you can easily crop the video with ScreenFlow after recording.
 
-To crop the video in ScreenFlow, use the button on the bottom left of the screen.
+To crop the video in ScreenFlow, use the button on the bottom left of the screen. Specify the 1280 x 720 dimensions. Drag the box to overlap with the visible section. Press Apply.
 
 ![crop](http://cl.ly/1p312E2J0m1x/download/Image%202016-06-01%20at%204.57.08%20PM.png)
 
