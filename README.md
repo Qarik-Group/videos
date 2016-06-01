@@ -10,11 +10,35 @@ There is a Concourse CI pipeline to do much of the video processing and episode 
 
 It is important that the videos are consistent - regardless of presenter. We can't fix presenters' accents... or can we? But we can at least use a consistent set of tools on screen:
 
-* [iTerm2](https://www.iterm2.com/)
+* [iTerm2](https://www.iterm2.com/) (v3.0.0+)
 * [Atom](https://atom.io/)
 * [Chrome](https://www.google.com/chrome/)
 
 Why use these tools for new videos? They were the tools used in the original videos.
+
+### Terminal settings
+
+```
+export PS1="%~%% "
+```
+
+If you use oh-my-zsh, then reset to no theme. Replace `$ZSH_THEME` in `~/.zshrc` with `""`:
+
+```
+ZSH_THEME=""
+```
+
+The root working folder is to be called `~/workspace`. For example, if you are working inside the concourse-tutorial project, then that repo would be cloned into `~/workspace` as `~/workspace/concourse-tutorial`.
+
+The iTerm2 prompt would look like:
+
+```
+~/workspace/concourse-tutorial%
+```
+
+Set the font to 14pt Monaco:
+
+![iterm2](http://cl.ly/0n3K1p0c0f0e/download/Image%202016-06-01%20at%2010.50.14%20AM.png)
 
 ### Dimensions
 
