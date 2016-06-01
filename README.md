@@ -4,7 +4,19 @@ This site contains the metadata for each video episode of [Stark & Wayne Videos]
 
 There is a Concourse CI pipeline to do much of the video processing and episode updating work (to YouTube and to the blog).
 
-## Dimensions
+## Producing videos
+
+### Consistent tools
+
+It is important that the videos are consistent - regardless of presenter. We can't fix presenters' accents... or can we? But we can at least use a consistent set of tools on screen:
+
+* [iTerm2](https://www.iterm2.com/)
+* [Atom](https://atom.io/)
+* [Chrome](https://www.google.com/chrome/)
+
+Why use these tools for new videos? They were the tools used in the original videos.
+
+### Dimensions
 
 Videos need to be 720p HD (16:9 aspect ratio) which is 1280x720 px. ScreenFlow can do cropping.
 
@@ -14,7 +26,7 @@ To continuously reuse the same 1280x720 region of your screen, perhaps use [LICE
 
 Then position the windows being used into that space - iTerm, Chrome, etc. This will ensure that you can easily crop the video with ScreenFlow after recording.
 
-## Exporting videos
+### Exporting videos
 
 We are publishing the videos to Vimeo. It provides recommendations https://vimeo.com/help/compression
 
