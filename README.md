@@ -38,8 +38,6 @@ The iTerm2 prompt would look like:
 
 Set the font to 15pt Monaco:
 
-![iterm2](http://cl.ly/0n3K1p0c0f0e/download/Image%202016-06-01%20at%2010.50.14%20AM.png)
-
 ```
 /usr/libexec/PlistBuddy -c "Set :\"New Bookmarks\":0:\"Normal Font\" \"Monaco 15\""  ~/Library/Preferences/com.googlecode.iterm2.plist
 ```
