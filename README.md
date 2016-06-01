@@ -36,9 +36,20 @@ The iTerm2 prompt would look like:
 ~/workspace/concourse-tutorial%
 ```
 
-Set the font to 14pt Monaco:
+Set the font to 15pt Monaco:
 
 ![iterm2](http://cl.ly/0n3K1p0c0f0e/download/Image%202016-06-01%20at%2010.50.14%20AM.png)
+
+```
+/usr/libexec/PlistBuddy -c "Set :\"New Bookmarks\":0:\"Normal Font\" \"Monaco 15\""  ~/Library/Preferences/com.googlecode.iterm2.plist
+```
+
+Set the New Window size to 141 x 33. This nicely fits into 1280x720px.
+
+```
+/usr/libexec/PlistBuddy -c "Set :\"New Bookmarks\":0:\"Columns\" 141"  ~/Library/Preferences/com.googlecode.iterm2.plist
+/usr/libexec/PlistBuddy -c "Set :\"New Bookmarks\":0:\"Rows\" 33"  ~/Library/Preferences/com.googlecode.iterm2.plist
+```
 
 ### Dimensions
 
