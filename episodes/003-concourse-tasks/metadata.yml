@@ -1,0 +1,11 @@
+---
+id: 3
+slug: 003-concourse-tasks
+title: Concourse tasks: the basic unit of work
+description: The basic unit of work in Concourse is the task. In this episode we learn about them and how to provide inputs.
+tags: Concourse
+blog_article_id: 3
+blog_episode_url: https://www.starkandwayne.com/videos/003-concourse-tasks/
+original_vimeo_url: https://vimeo.com/169023009
+raw_episode_dropbox_url:
+custom_vimeo_url: https://vimeo.com/starkandwayne/003-concourse-tasks

@@ -1,5 +1,5 @@
 ---
-id: 1
+id: 2
 slug: 002-what-is-bosh-how-to-get-started
 title: What is BOSH? How to get started?
 description: In this tutorial we get started with a local version of BOSH called bosh-lite and start to introduce some of the concepts, terminology and commands.
